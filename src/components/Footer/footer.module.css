@@ -1,0 +1,77 @@
+.footerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-block: var(--spacing-stack-xxxl);
+}
+
+.footerContent {
+  height: 100%;
+  width: 100%;
+  max-width: 1624px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-top: 1px solid var(--color-base-dark-highlight);
+  padding-top: var(--spacing-stack-sm);
+}
+
+.footerText {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-lg);
+  text-align: left;
+  color: var(--color-base-dark-main);
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .footerContainer {
+    padding-block: var(--spacing-stack-xxl);
+  }
+
+  .footerContent {
+    max-width: 342px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footerContent > .footerText:last-child {
+    margin-top: var(--spacing-stack-nano);
+  }
+
+  .footerText {
+    font-size: var(--font-size-xxs);
+  }
+}
+
+/* Tablet */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .footerContainer {
+    padding-block: var(--spacing-stack-xxl);
+  }
+
+  .footerContent {
+    max-width: 944px;
+  }
+
+  .footerText {
+    font-size: var(--font-size-xxs);
+  }
+}
+
+/* Smaller Desktop */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .footerContainer {
+    padding-block: var(--spacing-stack-xxl);
+  }
+
+  .footerContent {
+    max-width: 1296px;
+  }
+
+  .footerText {
+    font-size: var(--font-size-xs);
+  }
+}
