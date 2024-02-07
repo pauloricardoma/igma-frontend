@@ -1,0 +1,68 @@
+.inputText {
+  height: 64px;
+  width: auto;
+  vertical-align: center;
+  color: var(--color-base-dark-highlight);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-xl);
+  border: none;
+  border-radius: var(--border-radius-none);
+  border-bottom: 2px solid var(--color-base-dark-highlight);
+  cursor: pointer;
+}
+
+.inputText:hover {
+  border-bottom: 3px solid var(--color-base-dark-highlight);
+}
+
+.inputText:focus {
+  outline: none;
+  border: 1px solid var(--color-primary-light);
+  border-bottom: 3px solid var(--color-base-dark-highlight);
+}
+
+.inputText:active {
+  font-weight: var(--font-weight-semibold);
+}
+
+.inputText:disabled {
+  border-color: var(--color-base-dark-background);
+  color: var(--color-base-dark-background);
+  cursor: not-allowed;
+}
+
+.inputTextError {
+  border-color: var(--color-error-main);
+}
+
+.errorText {
+  color: var(--color-error-dark);
+  font-size: var(--font-size-xxxs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-lg);
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .inputText {
+    height: 56px;
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Tablet */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .inputText {
+    height: 56px;
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Smaller Desktop */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .inputText {
+    height: 56px;
+    font-size: var(--font-size-xs);
+  }
+}
