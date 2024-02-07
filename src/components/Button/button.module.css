@@ -1,0 +1,68 @@
+.button {
+  height: 56px;
+  min-width: 160px;
+  font-size: var(--font-size-xs);
+  padding-inline: var(--spacing-inline-md);
+  vertical-align: center;
+  color: var(--color-base-light-contrast);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-lg);
+  border-width: var(--border-width-none);
+  border-radius: var(--border-radius-none);
+  background-color: var(--color-base-dark-highlight);
+  cursor: pointer;
+}
+
+.button:focus {
+  border-width: var(--border-width-thin);
+  border-color: var(--color-primary-main);
+  background-color: var(--color-base-dark-main);
+}
+
+.button:active {
+  color: var(--color-base-light-secondary);
+}
+
+.button:hover {
+  background-color: var(--color-base-dark-main);
+}
+
+.button:not(:hover) {
+  transition: background-color 2s linear;
+}
+
+.button:disabled {
+  background-color: var(--color-base-dark-background);
+  color: var(--color-base-dark-secondary);
+  cursor: not-allowed;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .button {
+    height: 48px;
+    min-width: 120px;
+    font-size: var(--font-size-xxs);
+    padding-inline: var(--spacing-inline-sm);
+  }
+}
+
+/* Tablet */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .button {
+    height: 48px;
+    min-width: 120px;
+    font-size: var(--font-size-xxs);
+    padding-inline: var(--spacing-inline-sm);
+  }
+}
+
+/* Smaller Desktop */
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .button {
+    height: 48px;
+    min-width: 120px;
+    font-size: var(--font-size-xxs);
+    padding-inline: var(--spacing-inline-sm);
+  }
+}
