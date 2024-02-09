@@ -1,0 +1,113 @@
+.section {
+  height: 900px;
+  width: 100%;
+  max-width: 1624px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  max-width: 525px;
+}
+
+.customParagraphDescription {
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--spacing-stack-md);
+}
+
+.inputName {
+  margin-top: var(--spacing-stack-md);
+}
+
+.inputEmail {
+  margin-top: var(--spacing-stack-xxs);
+}
+
+.buttonSignature {
+  margin-top: var(--spacing-stack-lg);
+}
+
+.right {
+  height: 100%;
+  max-width: 937px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imageRight {
+  width: 242px;
+  height: 176px;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .section {
+    height: auto;
+    max-width: 342px;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: var(--spacing-stack-xxl);
+  }
+
+  .left {
+    max-width: 342px;
+  }
+
+  .right {
+    max-width: 342px;
+    height: 238px;
+    justify-content: center;
+    margin-top: var(--spacing-stack-sm);
+  }
+
+  .imageRight {
+    width: 170px;
+    height: 124px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .section {
+    height: 680px;
+    max-width: 944px;
+  }
+
+  .left {
+    max-width: 304px;
+  }
+
+  .right {
+    max-width: 544px;
+    justify-content: center;
+  }
+
+  .imageRight {
+    width: 170px;
+    height: 124px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .section {
+    height: 800px;
+    max-width: 1296px;
+  }
+
+  .left {
+    max-width: 421px;
+  }
+
+  .right {
+    max-width: 749px;
+  }
+
+  .imageRight {
+    width: 210px;
+    height: 153px;
+  }
+}

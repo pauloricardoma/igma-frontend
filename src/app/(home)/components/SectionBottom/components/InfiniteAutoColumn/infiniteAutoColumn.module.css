@@ -1,0 +1,25 @@
+.columnVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.columnHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.infiniteContainerVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infiniteContainerHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
