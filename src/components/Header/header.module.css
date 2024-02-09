@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.headerFixedContainer {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .headerLogoContainer {
   position: absolute;
 }
@@ -20,8 +28,18 @@
   max-width: 1624px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   margin: auto;
+}
+
+.headerIconAvatar {
+  width: 28px;
+  height: 28px;
+}
+
+.headerAvatar {
+  width: 40px;
+  height: 40px;
 }
 
 /* Mobile */
@@ -34,10 +52,20 @@
     width: 80px;
     height: 28px;
   }
+
+  .headerIconAvatar {
+    width: 24px;
+    height: 24px;
+  }
+
+  .headerAvatar {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 /* Tablet */
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   .headerContent {
     max-width: 944px;
   }
@@ -46,10 +74,20 @@
     width: 80px;
     height: 28px;
   }
+
+  .headerIconAvatar {
+    width: 24px;
+    height: 24px;
+  }
+
+  .headerAvatar {
+    width: 36px;
+    height: 36px;
+  }
 }
 
-/* Smaller Desktop */
-@media (min-width: 1280px) and (max-width: 1440px) {
+/* Desktop */
+@media (min-width: 1281px) and (max-width: 1440px) {
   .headerContent {
     max-width: 1296px;
   }
