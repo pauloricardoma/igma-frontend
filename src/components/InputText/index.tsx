@@ -14,6 +14,7 @@ export default function InputText(props: InputTextProps) {
         className={`
           ${styles.inputText}
           ${props.error ? styles.inputTextError : ''}
+          ${props.className}
         `}
       />
       {!!props.error && (

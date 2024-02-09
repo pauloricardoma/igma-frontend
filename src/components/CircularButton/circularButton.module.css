@@ -46,7 +46,7 @@
 }
 
 /* Tablet */
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   .button {
     height: 40px;
     width: 40px;
